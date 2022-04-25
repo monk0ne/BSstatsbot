@@ -1,6 +1,7 @@
-import brawlstats as bs
+import brawlstats
 from config import TOKEN
 
 
-user = bs.Client(token=TOKEN)
-print(user.profile.brawlers)
+client = brawlstats.Client(TOKEN)
+player = client.get_profile('#92URLQ2GQ')
+
